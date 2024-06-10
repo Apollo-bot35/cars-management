@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color:azure;
+        }
+    </style>
+</head>
+<body>
+    <h2><center>CAR REGISTRATION</center></h2>
+    <hr>
+
+    <form action="/addcar/" method="POST">
+        {% csrf_token %}
+        <center>
+            <img src="\static\download (12).jpg" height="470px" width="1270px">
+        <table class="box">
+            <br><br><br><br>
+            
+                <tr>
+                    <td>CAR ID</td>
+                    <td><input type="number" name="carid"> </td>
+                </tr>
+                <tr>
+                    <td>MODEL NAME</td>
+                    <td><input type="text" name="modelnm"> </td>
+                </tr>
+                <tr>
+                    <td>COMPANY</td>
+                    <td><input type="text" name="company"></td>
+                </tr>
+                <tr>
+                    <td>PRICE</td>
+                    <td><input  type="number" name="price"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+            
+        </table>
+        </center>
+    </form>
+</body>
+</html>

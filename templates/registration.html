@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color:azure; 
+        }
+    </style>
+</head>
+<body>
+    <h2><center>CUSTOMER REGISTRATION</center></h2>
+    <hr>
+    <form action="/addcustomer/" method="POST">
+        {% csrf_token %}
+        <center>
+        <img src="\static\download (12).jpg" height="522px" width="1280px">
+        <table class="box">
+            <br><br><br><br>
+            
+                <tr>
+                    <td>CUSTOMER ID</td>
+                    <td><input type="number" name="custid"> </td>
+                </tr>
+                <tr>
+                    <td>CUSTOMER NAME</td>
+                    <td><input type="text" name="custname"> </td>
+                </tr>
+                <tr>
+                    <td>ADDRESS</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>CONTACT NO</td>
+                    <td><input  type="number" name="phoneno"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+            
+        </table>
+        </center>
+    </form>
+</body>
+</html>

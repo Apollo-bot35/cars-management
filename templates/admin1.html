@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <style>
+       
+        .box1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color:azure;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2><center>ADMIN</center></h2>
+    <hr>
+    <form action="/login/" method="post">
+        {% csrf_token %}
+        <center>
+        <img src="\static\download (12).jpg" height="522px" width="1280px">
+        <table class="box1">
+            <br><br><br><br>
+            <tr>
+                <td>USERNAME</td>
+                <td><input type="text" name="usern" placeholder="username" required></td>
+            </tr>
+            <tr>
+                <td>PASSWORD</td>
+                <td><input type="password" name="password" placeholder="password" required></td>
+            </tr>
+            <tr>
+                <td><input type="Submit" value="submit"></td>
+            </tr>
+            </center>
+        </table>
+
+    </form>
+</body>
+</html>

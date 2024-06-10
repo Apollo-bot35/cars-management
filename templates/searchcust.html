@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color:azure;
+        }
+    </style>
+</head>
+<body>
+    <form action="/custsearch/" method="POST">
+        {% csrf_token %}
+        <center>
+        <img src="\static\download (12).jpg" height="522px" width="1280px">
+        <table class="box"> 
+            <br><br><br><br>
+            
+                <tr>
+                    <td>Customer NAME</td>
+                    <td><input type="text" name="custname"> </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="search"></td>
+                </tr>
+            
+        </table>
+        </center>
+    </form>
+</body>
+</html>
